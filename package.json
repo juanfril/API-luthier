@@ -4,7 +4,9 @@
   "description": "API make with nodeJs &amp; mongoDB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel-node": "babel-node --presets=@babel/preset-env",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "dev2": "nodemon --exec npx babel src/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +19,17 @@
   },
   "homepage": "https://github.com/juanfril/API-luthier#readme",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "@babel/cli": "7.17.6",
+    "@babel/core": "7.17.5",
+    "@babel/node": "7.16.8",
+    "@babel/preset-env": "7.16.11",
+    "nodemon": "2.0.15"
   },
   "dependencies": {
-    "express": "^4.17.3"
+    "body-parser": "1.19.2",
+    "dotenv": "16.0.0",
+    "express": "4.17.3",
+    "mongoose": "6.2.4",
+    "morgan": "1.10.0"
   }
 }
