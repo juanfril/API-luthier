@@ -1,3 +1,6 @@
+require('../DB/mongo');
+
+import User from '../models/User';
 import bodyParser from 'body-parser';
 import { Router } from 'express';
 import handleErrors from '../middlewares/handleErrors';
@@ -18,6 +21,7 @@ router.get('/users', (req, res) => {
       res.json(users);
     })
     .catch((err) => {
+      console.log('Error getting users:', err);
       res.status(500).json({ error: err.message });
     });
   //res.json(users);

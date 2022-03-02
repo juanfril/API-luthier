@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import express from 'express';
 import indexRoutes from './routes/index.routes';
 
