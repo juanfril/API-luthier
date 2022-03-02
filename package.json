@@ -4,14 +4,8 @@
   "description": "API make with nodeJs &amp; mongoDB",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "babel-node": "babel-node --presets=@babel/preset-env",
-    "dev": "nodemon src/index.js --exec babel-node",
-    "dev2": "nodemon --exec npx babel src/index.js"
-=======
     "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> 21042823b309895f349f06cf8678e1318dbe7712
   },
   "repository": {
     "type": "git",
